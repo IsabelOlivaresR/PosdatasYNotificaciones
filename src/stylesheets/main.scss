@@ -1,0 +1,130 @@
+//landing
+.header {
+  background-color: #9eafaa;
+  height: 40px;
+  &__menu {
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    @media all and (min-width: 768px) {
+      font-size: 25px;
+      height: 50px;
+    }
+  }
+  @media all and (min-width: 768px) {
+    height: 50px;
+  }
+}
+
+.main {
+  background-color: #f2f7f5;
+  height: 100vh;
+  &__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+.posdatas {
+  height: 300px;
+  width: 230px;
+  background-image: url('../images/Posdatas.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media all and (min-width: 768px) {
+    height: 420px;
+    width: 350px;
+  }
+}
+.whatsapp {
+  height: 300px;
+  width: 230px;
+  background-image: url('../images/notificaciones.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media all and (min-width: 768px) {
+    height: 420px;
+    width: 350px;
+  }
+}
+
+//letters
+.mainl {
+  background-color: #c3ebf5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__letter {
+    background-image: url('../images/91513.jpg');
+    background-position: center;
+    background-size: contain;
+    width: 400px;
+    height: 600px;
+    font-family: 'Homemade Apple', cursive;
+    padding: 20px;
+    &__main {
+      margin-top: 60px;
+      line-height: 22px;
+    }
+  }
+}
+
+.spotify {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+//whatsapps
+.mainw {
+  background-color: #ff9fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica;
+
+  &__mobile {
+    background-color: #7efdd3;
+    height: 700px;
+    width: 500px;
+    border-radius: 5%;
+    border: 15px solid black;
+    padding: 20px;
+
+    &__message {
+      background-color: #f5f6f6;
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 5%;
+      text-align: left;
+    }
+    &__main {
+      display: inline-block;
+      background-color: #b2fd6b;
+      padding: 10px;
+      border-radius: 5%;
+      margin-bottom: 20px;
+      text-align: right;
+    }
+  }
+}
