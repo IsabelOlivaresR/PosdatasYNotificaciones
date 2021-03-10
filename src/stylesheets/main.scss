@@ -1,7 +1,8 @@
-//landing
+//hEADER
 .header {
   background-color: #9eafaa;
   height: 40px;
+  width: 100%;
   &__menu {
     height: 40px;
     padding: 10px;
@@ -22,10 +23,32 @@
     height: 50px;
   }
 }
+.letterIndex {
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  &__item {
+    padding: 10px;
+    border: 1px solid #9eafaa;
+  }
+}
+.whatsappIndex {
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  right: 0;
+  &__item {
+    padding: 10px;
+    border: 1px solid #9eafaa;
+  }
+}
 
+//LANDING
 .main {
   background-color: #f2f7f5;
-  height: 100vh;
+  height: 100%;
   &__container {
     height: 100vh;
     display: flex;
@@ -65,10 +88,11 @@
   }
 }
 
-//letters
+//LETTERS
 .mainl {
   background-color: #c3ebf5;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,53 +101,68 @@
     background-image: url('../images/91513.jpg');
     background-position: center;
     background-size: contain;
-    width: 400px;
-    height: 600px;
-    font-family: 'Homemade Apple', cursive;
-    padding: 20px;
+    width: 80%;
+    height: 100%;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 20px;
+    padding: 24px;
+    @media all and (min-width: 768px) {
+      width: 60%;
+      font-size: 24px;
+    }
+    &__date {
+      margin-bottom: 60px;
+    }
     &__main {
-      margin-top: 60px;
       line-height: 22px;
+      margin-bottom: 10px;
+    }
+  }
+  &__video {
+    width: 80%;
+    padding: 20px;
+    @media all and (min-width: 768px) {
+      width: 500px;
     }
   }
 }
 
-.spotify {
-  height: 80px;
-  margin-bottom: 20px;
-}
-
-//whatsapps
+//WHATSAPPS
 .mainw {
   background-color: #ff9fff;
-  height: 100vh;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: Helvetica;
 
   &__mobile {
     background-color: #7efdd3;
-    height: 700px;
-    width: 500px;
+    height: 100%;
+    width: 80%;
     border-radius: 5%;
     border: 15px solid black;
     padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    @media all and (min-width: 768px) {
+      width: 60%;
+    }
 
     &__message {
       background-color: #f5f6f6;
-      display: inline-block;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       padding: 15px;
       border-radius: 5%;
       text-align: left;
     }
     &__main {
-      display: inline-block;
       background-color: #b2fd6b;
       padding: 10px;
       border-radius: 5%;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       text-align: right;
     }
   }

@@ -5,6 +5,7 @@ import Header from './Header';
 
 
 class Landing extends React.Component {
+
   render() {
     return (
       <div className='main'>
